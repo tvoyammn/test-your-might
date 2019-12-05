@@ -1,0 +1,9 @@
+﻿<h1>@Model.currGame</h1>
+@{
+	foreach (var deal in Model.AllDeals) {
+		<div>
+				<h2>Model: @deal.name</h2>
+				<p>Price: @deal.price.ToString("c")</p>
+		</div>
+	}
+}
